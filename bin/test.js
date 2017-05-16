@@ -26,7 +26,7 @@ var Lbp = require("../lib/")
 
  r = new Lbp.Expression("http://scta.info/resource/lectio1");
  //result = r.values("http://scta.info/property/hasManifestation");
- result = r.manifestations()
+ result = r.top_level_expression()
 
  result.then(function(data){
    console.log(data);
